@@ -73,7 +73,7 @@ module.exports = {
         { $pull: { friends: req.params.userId } }
       );
 
-      res.json({ message: 'User and associated thoughts successfully deleted and user removed from all friends lists' });
+      res.json({ message: 'This user and their associated thoughts have been deleted successfully and removed from friends lists' });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);

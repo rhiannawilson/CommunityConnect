@@ -1,9 +1,8 @@
 # CommunityConnect
-An API for a social network app using Express.js, MongoDB, and Mongoose, allowing users to share thoughts, react to friends' thoughts, and manage a friend list, with a walkthrough video demonstrating functionality required for submission.
+An API for a social network app allowing users to share thoughts, react to friends' thoughts, and manage a friend list,
 
 ## Description
-An API social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application utilises Express.js for routing, a MongoDB database, and the Mongoose ODM. Since no seed data is used, it's own data is populated using Insomnia after the API is created.
-
+An API social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application utilises Express.js for routing, a MongoDB database, and the Mongoose ODM. Since no seed data is used, it's own data is populated using Insomnia after the API is created.  Watch the walkthrough video demonstrating functionality required for submission.
 
 - Github Repo:
 - Github Deployed page:
@@ -13,7 +12,6 @@ An API social network web application where users can share their thoughts, reac
 - [Directory Structure](#directory-structure)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Appearance & Functionality](#appearance--functionality) 
 - [Contributions](#contributions)
 - [Credits](#credits)
 - [License](#license)
@@ -22,53 +20,31 @@ An API social network web application where users can share their thoughts, reac
 ## Directory Structure
 ```  
 ├── CMSify
-    ├── assets/
-        ├──ViewOfProject.png
     ├── config/ 
         ├── connection.js 
     ├── controllers/
-            ├── api/
-                ├── index.js 
-                ├── projectRoutes.js  
-                ├── userRoutes.js    
-        ├── homeRoutes.js 
-        ├── index.js 
-    ├── db/ 
-        ├── schema.sql 
+        ├── thoughtCtrlr.js 
+        ├── userCtrlr.js     
     ├── models/ 
         ├── index.js 
-        ├── project.js 
-        ├── user.js 
-    ├── node_modules/ 
-    ├── public/ 
-        ├── css/ 
-            ├── jass.css 
-            ├── styles.css    
-        ├── js/ 
-            ├── login.js 
-            ├── logout.js  
-            ├── profile.js           
-    ├── seeds/ 
-        ├── projectData.json 
-        ├── seed.js 
-        ├── userData.json                 
+        ├── reaction.js 
+        ├── thought.js 
+        ├── user.js
+    ├── node_modules/          
+        ├── api/ 
+            ├── index.js 
+            ├── thoughtRoute.js 
+            ├── userRoute.js
+        ├── index.js                
     ├── utils/
-        ├── auth.js      
-        ├── helpers.js        
-    ├── views/
-        ├── layouts/
-            ├── main.handlebars
-        ├── homepage.handlebars
-        ├── login.handlebars
-        ├── profile.handlebars
-        ├── project.handlebars  
-    ├── .env          
+        ├── communityData.js      
+        ├── seed.js                 
     ├── .gitignore    
+    ├── index.js  
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    ├── README.md 
-    └── server.js  
+    └── README.md  
 ```
 
 ### User Story
@@ -92,20 +68,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 [Back to Table of Contents](#table-of-contents)
 
-## Appearance & Functionality 
-#### View of Main Page
->![View of projectExample](./assets/ViewOfProject.png)
-
-#### Login & Signup Page
->![View of loginSignup Page](./assets/LoginSignupPage.png)
-
-#### Profile Page
->![View of Profile Page](./assets/ProfilePage.png)
-
-#### Blog Post Page 
->![View of Blog Post Page](./assets/BlogPostPage.png)
-
-[Back to Table of Contents](#table-of-contents)
 
 ### Technical Details
 - > Node 
