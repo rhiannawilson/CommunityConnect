@@ -4,8 +4,10 @@ An API for a social network app allowing users to share thoughts, react to frien
 ## Description
 An API social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application utilises Express.js for routing, a MongoDB database, and the Mongoose ODM. Since no seed data is used, it's own data is populated using Insomnia after the API is created.  Watch the walkthrough video demonstrating functionality required for submission.
 
+## Video Demo
+[Video Demo](https://drive.google.com/file/d/1A9cQtK0piOUTVj1XFWJ6KiKIbLhmvRO1/view?usp=sharing)
 - Github Repo: https://github.com/rhiannawilson/CommunityConnect
-- Github Deployed page:
+
 
 ### Table of Contents:
 - [Description](#description)
